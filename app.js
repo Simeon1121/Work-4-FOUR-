@@ -56,6 +56,11 @@ function gamer(e) {
     score.textContent--;
     body.backgroundColor = "yellow";
   }
+
+  if(score.textContent <1){
+    checkBtn.setAttribute('disabled', 'disabled')
+    message.textContent = 'game over, restart game'
+}
 }
 checkBtn.addEventListener("click", gamer);
 
