@@ -3,7 +3,7 @@ let number = document.querySelector(".number");
 let inpOfGuess = document.querySelector(".guess");
 let checkBtn = document.querySelector(".btn-checker");
 let message = document.querySelector(".message");
-let againBtn = document.querySelector(".again");
+let againBtn = document.querySelector(".btn-again");
 let score = document.querySelector(".score");
 
 // console.log(typeof inpOfGuess.value);
@@ -58,5 +58,11 @@ function gamer(e) {
   }
 }
 checkBtn.addEventListener("click", gamer);
+
+function restartGame() {
+  location.reload();
+}
+
+againBtn.addEventListener("click", restartGame);
 
 
